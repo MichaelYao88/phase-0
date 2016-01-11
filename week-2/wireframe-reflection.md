@@ -1,5 +1,5 @@
-![My Site Map](/imgs/sitemap.png)
-![My Site Map](/imgs/sitemap.png)
+![My Site Map](../imgs/index.png)
+![My Site Map](../imgs/blog.png)
 What is a wireframe?
 	A wireframe is a layout for your webpage; what your website will look like once you fill it with content
 What are the benefits of wireframing?
