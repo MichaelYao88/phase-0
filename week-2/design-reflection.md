@@ -1,3 +1,4 @@
+![My Site Map](img/sitemap.png)
 What are the 6 Phases of Web Design?
 	Information Gathering
 	Planning
