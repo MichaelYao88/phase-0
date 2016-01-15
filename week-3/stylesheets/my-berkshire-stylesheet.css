@@ -1,0 +1,98 @@
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+It should go in the head so it loads before the rest of the html, it should point to the correct filepath/filetypes
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+It was quite challenging, we used padding, display:inline block, vertical-align:top, margin and font size tweaking and a multiple classes to get it to work;
+
+What CSS did you use to modify the element style (like size, color, etc.)
+font-size, color, font-weight,
+
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+Yes, we used classes because it was more efficient to assign changes to multiple sections that had the same font type, border type, or column formatting.
+
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+I think ours was cleaner as we did all of the formatting and styling in CSS rather than having it in both.
+*/
+
+
+
+body {
+  color: #000080;
+    background-image: url(http://cdn.kizaz.com/wp-content/uploads/2013/12/warren-buffet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:100%
+}
+
+a:link {
+  color: #800080; font-size:1em;}
+  
+a:visited {
+  color: #ff0000;  font-size:1em; }
+  
+span {
+  font-size:.65em}
+
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+li{
+  padding: .5em;
+}
+
+header{
+  font-weight:bold;
+  text-align:center;
+  width:275x;
+  border-bottom: 1px solid gray;
+  background-img:url(http://cdn.kizaz.com/wp-content/uploads/2013/12/warren-buffet.jpg)
+}
+ 
+.capital{
+  font-size:2em;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+section{
+  width:39%;
+  padding: 2% 2% 2% 8%;
+  margin: 0;
+ 
+}
+
+aside {
+  width:39%;
+  padding: 2% 8% 2% 2%;
+  margin: 0;
+ 
+}
+.linebreak{
+   display: block;
+   
+}
+ 
+ .bigbreak{
+   font-size:.8em;
+ }
+ 
+ main { 
+ padding: 0;
+ margin: 0;
+ border-bottom: 1px solid gray;}
+ 
+ footer{border-bottom: 1px solid gray;
+ border-top: 1px solid gray;
+ padding: .5em;
+ font-size:.65em
+ }
+ 
+ div{font-size:.6em}
+ .geico{padding-top:.5em; text-align:center;}
