@@ -1,1 +1,33 @@
-p {color:green;}
+body{
+  font-family:arial;
+  background:white;
+}
+
+header{
+  text-align:center;
+}
+.column-1{
+  width:49%;
+  padding:5%;
+  box-sizing:border-box;
+  display:table-cell;
+  background-color: yellow;
+}
+.column-2{
+  width:50%;
+  padding:5%;
+  display:table-cell;
+  background-color:blue;
+}
+
+.column-1,
+.column-2{
+  border: dashed black 1px;
+}
+
+footer{
+  clear:both;
+  padding-top:2em;
+  margin-top:.5em;
+  border-top: 1px solid gray;
+}
