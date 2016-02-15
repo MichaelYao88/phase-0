@@ -19,54 +19,52 @@
 // start new game
 
 // Initial Code
+var name = prompt("Please enter your name");
 
-var player = prompt("Please enter your name", "Harry Potter")
 var scoreboard = {
-  name: player,
+  name: name,
   wins: 0,
-  losses: 0,
-}
-
-verify()
-
-function play() {
-  var doesnt_matter = math.random()
-if (doesnt_matter < 1/3)
-  { console.log("You win!")
-    scoreboard.wins++}
-else if (doesnt_matter < 2/3)
-  { console.log("You lose!")
-    scoreboard.losses++}
-else (doesnt_matter < 1)
-  { console.log("Tie!")
-    }
-verify()
-}
+  losses: 0
+};
 
 function verify() {
-  console.log (scoreboard)
-var choice = prompt("Rock, Paper, or Scissors?")
+  alert(scoreboard.name+"\n W:"+scoreboard.wins+"\n L:"+scoreboard.losses);
+var choice = prompt("Rock, Paper, or Scissors?");
 if (choice === "Rock" || choice === "Paper" || choice === "Scissors")
-  {play()}
+{
+  play();}
 else
-  {console.log("I don't understand, please try again")
-  verify()}
+  {alert("I don't understand, please try again");
+  verify();}
+}
+
+function play() {
+  var doesnt_matter = Math.random();
+if (doesnt_matter < 1/3)
+  { alert("You win!");
+    scoreboard.wins++;}
+else if (doesnt_matter < 2/3)
+  { alert("You lose!");
+    scoreboard.losses++;}
+else
+  { alert("Tie!");
+    }
+    var playagain=prompt("Play again? Y/N","Y");
+    if (playagain==="Y")
+{verify()}
 }
 
 
-// Refactored Code
+verify();
 
+// What was the most difficult part of this challenge?
+// The syntax; a lot of error messages don't point to where the syntax is not working so I had to use JSLint after a little googling
 
+// What did you learn about creating objects and functions that interact with one another?
+// mostly how they interact syntactically
 
+// Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+// Math.random only, creates a random number from 0 to 1
 
-
-
-// Reflection
-//
-//
-//
-//
-//
-//
-//
-//
+// How can you access and manipulate properties of objects
+// by calling them
