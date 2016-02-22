@@ -1,11 +1,26 @@
-What is a one-to-one database?
-a database with tables that share only one connection and do not overlap
-When would you use a one-to-one database? (Think generally, not in terms of the example you created).
-when one table has a trait or attribute that it can only have one of
-What is a many-to-many database?
-when a table that shares multiple connections with other tables
-When would you use a many-to-many database? (Think generally, not in terms of the example you created).
-when one table has a trait or attribute others can have multiple of
-What is confusing about database schemas? What makes sense?
-it's kinda hard to say what you're trying to reflect, I think putting it visually makes a lot of sense
-![screenshot](../imgs/table.jpg)
+select * from states;
+​
+select * from regions;
+​
+select state_name, population from states;
+​
+select state_name, population from states order by population desc;
+​
+select state_name from states where region_id = 7;
+​
+select state_name, population_density from states where population_density > 50 order by population_density asc;
+​
+select state_name from states where population between 1000000 and 1500000;
+​
+select state_name, region_id from states order by region_id asc;
+​
+select region_name from regions where region_name like '%Central%';
+​
+select regions.region_name, states.state_name from regions inner join states on states.region_id = regions.id
+​
+![screenshot](../imgs/table.png)
+​
+What are databases for? Databases makes storing and retreiving data easily accessible.
+What is a one-to-many relationship? One value in a table may have many references.
+What is a primary key? What is a foreign key? How can you determine which is which? Primary Key is a unique key in a relational database. Foreign key refers to a primary key in another table. You are able to have more than one foreign key in a table.
+How can you select information out of a SQL database? What are some general guidelines for that? Using SQL language and DBMS we can select information.
